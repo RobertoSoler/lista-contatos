@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux'
 // ------------------------------------------------------------
 // import BarraLateral from './containers/BarraLateral'
-// import ListaDeTarefas from './containers/ListaDeTarefas'
+// import ListaDeContatos from './containers/ListaDeContatos'
 import EstiloGlobal, { Container } from './styles'
 //
 // ************************************************************
@@ -13,7 +13,7 @@ import EstiloGlobal, { Container } from './styles'
 //       <EstiloGlobal />
 //       <Container>
 //         <BarraLateral />
-//         <ListaDeTarefas />
+//         <ListaDeContatos />
 //       </Container>
 //     </>
 //   )

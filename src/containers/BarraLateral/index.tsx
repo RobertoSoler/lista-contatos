@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import FiltroCard from '../../components/FiltroCard'
 import { RootReducer } from '../../store'
 import { alterarTermo } from '../../store/reducers/filtro'
-import * as enums from '../../utils/enums/Tarefa'
+import * as enums from '../../utils/enums/Contato'
 
 import * as S from './styles'
 import { Botao, Campo } from '../../styles'
@@ -30,35 +30,20 @@ const BarraLateral = ({ mostrarFiltros }: Props) => {
             />
             <S.Filtros>
               <FiltroCard
-                valor={enums.Status.PENDENTE}
-                criterio="status"
-                legenda="pendentes"
+                valor={enums.Categoria.PESSOAL}
+                criterio="categoria"
+                legenda="pessoais"
               />
               <FiltroCard
-                valor={enums.Status.PENDENTE}
-                criterio="status"
-                legenda="concluídas"
+                valor={enums.Categoria.PROFISSIONAL}
+                criterio="categoria"
+                legenda="profissionais"
               />
-              <FiltroCard
-                valor={enums.Status.CONCLUIDA}
-                criterio="status"
-                legenda="urgentes"
-              />
-              <FiltroCard
-                valor={enums.Status.PENDENTE}
-                criterio="status"
-                legenda="importantes"
-              />
-              <FiltroCard
-                valor={enums.Status.PENDENTE}
-                criterio="status"
-                legenda="normal"
-              />
-              <FiltroCard criterio="todas" legenda="todas" />
+              <FiltroCard criterio="todos" legenda="todos" />
             </S.Filtros>
           </>
         ) : (
-          <Botao onClick={() => navigate('/')}>Volta a lista de tarefas</Botao>
+          <Botao onClick={() => navigate('/')}>Volta a lista de contatos</Botao>
         )}
       </div>
     </S.Aside>
